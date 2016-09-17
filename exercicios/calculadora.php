@@ -1,21 +1,17 @@
 <?php
 
-    echo "Escolha uma Opção:\n";  
+    echo "..:: CALCULADORA ::..\n";  
     
     echo "  1 - Somar\n";
     echo "  2 - Subtrair\n";
     echo "  3 - Multiplicar\n";
     echo "  4 - Dividir:\n";
     
-    $opcao = readLine();    
+    $opcao = readLine('Escolha uma Opção: ');    
     
-    echo "\nEscolha o primeiro valor: ";
-    
-    $num1 = readLine();
-    
-    echo "\nEscolha o segundo valor: "; 
-    
-    $num2 = readLine();
+    $num1 = readLine('Escolha o primeiro valor: ');
+
+    $num2 = readLine('Escolha o segundo valor: ');
 
 
     switch($opcao){
@@ -37,8 +33,8 @@
                     break;
 
             default:
-            echo "Por favor, digite uma opção válida!\n";
+            echo "Por favor, digite uma opção válida!";
     }
     
-    echo "\nO resultado é: $result";
+    echo "O resultado é: $result\n";
     
