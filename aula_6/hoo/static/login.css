@@ -1,0 +1,9 @@
+body{
+    background: url(http://minasinova.com.br/wp-content/uploads/90e3db9cc120ae45cb8781286e950dfc.jpg);
+	background-color: #444;
+    background: url(http://minasinova.com.br/wp-content/uploads/90e3db9cc120ae45cb8781286e950dfc.jpg),url(http://minasinova.com.br/wp-content/uploads/90e3db9cc120ae45cb8781286e950dfc.jpg),url(http://minasinova.com.br/wp-content/uploads/90e3db9cc120ae45cb8781286e950dfc.jpg);    
+}
+
+.vertical-offset-100{
+    padding-top:100px;
+}
