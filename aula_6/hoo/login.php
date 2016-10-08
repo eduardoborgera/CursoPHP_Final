@@ -25,11 +25,12 @@
 			  				<?php }
   								else if($_GET['error'] == 'missing_field'){ ?>
   									Campos Obrigatorios!
+
   							<?php } ?>	
 			  			</div>
 
 			  		<?php } ?>
-
+			  		<?php echo $sec_senha = sha1('s3gur@' . '123'); ?>
 			    	<form accept-charset="UTF-8" role="form" method="POST" action="<?= $URL_PATH ?>core/login.php">
                     <fieldset>
 			    	  	<div class="form-group">

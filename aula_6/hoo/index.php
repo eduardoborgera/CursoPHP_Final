@@ -66,7 +66,7 @@ if(! isset($_SESSION['email'])){
   	<tbody>
  		<?php 
  			// Realizar a consulta como banco
- 			$mysql_query = mysqli_query($conn, "SELECT * FROM usuario");
+ 			$mysql_query = mysqli_query($conn, "SELECT * FROM usuarios");
  		?>
 
  		<?php while(($row = mysqli_fetch_assoc($mysql_query))): ?>
@@ -77,12 +77,10 @@ if(! isset($_SESSION['email'])){
  				<td><?= $row['email'] ?></td>
 
  				<td>
-	 				<a href="<?= $URL_PATH ?>core/editar.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">Editar</a>
+	 				<a href="<?= $URL_PATH ?>alterar_usuario.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">Editar</a>
 	 				<a href="<?= $URL_PATH ?>core/excluir.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">Excluir</a>
  				</td>	
- 			</tr>
-
- 			
+ 			</tr>			
 
  		<?php endwhile ?>
 

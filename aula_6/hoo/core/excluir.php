@@ -13,7 +13,7 @@ if(! isset($_SESSION['email'])){
 $id  = htmlspecialchars($_GET['id']);
 
 // Construir a consulta
-$sql = "DELETE FROM usuario WHERE id = '$id'";
+$sql = "DELETE FROM usuarios WHERE id = '$id'";
 
 // Moldar Query do banco com o valor
 $query = sprintf($sql, $id);
